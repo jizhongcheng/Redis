@@ -5,6 +5,14 @@ import redis.clients.jedis.Jedis;
 public class test {
 
 	public static void main(String[] args) {
+//        static String host  = "172.17.50.183";
+//        static int port = 6379;
+//        static Jedis jedis = null;
+//        static{
+//            jedis = new Jedis(host,port);
+//            jedis.auth("wlxy123");
+//        }
+
 		//连接本地的 Redis 服务
         Jedis jedis = new Jedis("localhost");
         System.out.println("连接成功");
